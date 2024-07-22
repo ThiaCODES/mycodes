@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bdy {
+            color: #000;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+
+        .bdy-pd {
+            padding: 30px;
+            font-family: monospace;
+            background-color: red;
+        }
+        .btn-color {
+            color: yellow;
+            letter-spacing: 5px;
+           
+        }
+
+
+        .btn {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body id="body" class="bdy bdy-pd">
+    <button id="button" class="btn btn-color">Submit</button>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequuntur, quos maxime facilis minima velit. Modi qui veritatis dolorem consequuntur alias debitis doloremque non quia! Ut voluptate recusandae ducimus harum.</h1>
+    <script>
+        const ui = document.querySelector("#body")
+        const btn = document.querySelector('#button')
+
+      
+            console.log(ui.classList);
+
+        if(new Date().getHours > 12 ) {
+                ui.classList.add('bdy-pd')
+                console.log(ui.classList);
+            }
+      
+        btn.addEventListener('mouseenter', function() {
+            btn.innerHTML = "Success!"
+            btn.classList.toggle('btn-color')
+           
+           
+            
+        })
+
+
+        
+
+
+        
+    </script>
+</body>
+</html>

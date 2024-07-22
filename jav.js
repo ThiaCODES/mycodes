@@ -43,3 +43,5 @@ switch(new Date() . getDay()){
         day= " What is today's date"
 }
 heading.innerHTML= `Today is ${day}`;
+//july 19
+
